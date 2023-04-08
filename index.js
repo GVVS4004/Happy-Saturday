@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const app= express();
 const port=3000;
 app.use(bodyParser.json());
+require('dotenv').config();
 
 app.get('/login',(req,res)=>{
     res.send('<h1>This is login page</h1>');
@@ -22,5 +23,5 @@ app.get(`/calculator/:num1/:num2`,(req,res)=>{
     res.send(`${result}`);
 
 })
-
-app.listen(port,()=>{console.log("Listening to port 3000")});
+// console.log(process.env.PORT);
+app.listen(3000,()=>{console.log(`Listening to port`)});
