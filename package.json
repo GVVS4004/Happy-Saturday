@@ -1,0 +1,15 @@
+{
+  "name": "happysaturday",
+  "version": "1.0.0",
+  "description": "This is sample project for being zero ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vijay",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}
